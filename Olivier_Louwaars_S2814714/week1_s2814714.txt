@@ -1,0 +1,63 @@
+Assignment 1.1.1
+
+{ (Rest,2),
+(Point,2),
+(Drive,1),
+(Gun,1),
+(Back_Of_Seat,1),
+(Tense,1),
+(Relaxed,1),
+(Marvin,0),
+(Vincent,0),
+(Jules,0) }.
+
+
+Assignment 1.1.2
+
+M=<D,F>
+D={d1,d2,d3,d4,d5}
+F(Marvin)=d1
+F(Vincent)=d2
+F(Jules)=d3
+F(Gun)={d4}
+F(Back_Of_Seat)={d5}
+F(Drive)={d3}
+F(Tense)={d1}
+F(Relaxed)={d2}
+F(Point)={(d4,d1)}
+F(Rest)={(d4,d5)}
+
+
+Assignment 1.1.4
+
+{ (Sits_On,2), 
+(Table,1),
+(Red,1),
+(Green,1),
+(Yellow,1),
+(Pyramid,1),
+(Cubical,1),
+(Small,1),
+(Large,1),
+(Block,1) }.
+
+M=<D,F>
+D={d1,d2,d3,d4,d5}
+F(Block)={d1,d2,d3,d4}
+F(Table)={d5}
+F(Red)={d1,d2}
+F(Green)={d3}
+F(Yellow)={d4}
+F(Pyramid)={d3,d4}
+F(Cubical)={d1,d2}
+F(Small)={d1,d2,d4}
+F(Large)={d3}
+F(Sits_On)={(d1,d5),(d2,d5)(d3,d5),(d4,{d1,d2})}
+
+Assignment 3
+Hard example 1: 
+Hard example 2:
+
+
+
+
