@@ -48,3 +48,10 @@ F(RED) = {d1,d2}
 F(YELLOW) = {d3}
 F(GREEN) = {d4}
 F(ON) = {(d1,d5),(d2,d5),(d4,d5),(d3,{d1,d2})}
+
+Assignment 1.1
+
+
+
+
+
