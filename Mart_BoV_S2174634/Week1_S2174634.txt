@@ -1,3 +1,8 @@
+Screenshot from Wordrobe profile can be found as a file (profile.png).
+Also the two difficult questions are added as images (Difficult_question1.png and Difficult_question2.png).
+The first question was difficult because the senses look alike a lot and are maybe a bit vague. I chose the second option, a territory occupied by a nation.
+The same goes for the second difficult question. I could not find the difference between two senses. A compromise could be a middle way between two extremes but also an accommodation in which both sides make concessions. I chose the last option, because there was no mention of extremes in the sentence.
+
 Assignment 1.1.1
 
 { (Point,2),
