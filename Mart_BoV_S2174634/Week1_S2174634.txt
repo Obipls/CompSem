@@ -49,9 +49,24 @@ F(YELLOW) = {d3}
 F(GREEN) = {d4}
 F(ON) = {(d1,d5),(d2,d5),(d4,d5),(d3,{d1,d2})}
 
-Assignment 1.1
+Exercise 1.1 & 1.2
 
-
-
-
-
+M=<D,F>
+D={d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23}
+F(CHAIR)={d1}F(DOG)={d2}
+F(FLOWER)={d4,d5,d6,d7,d8}
+F(HOUSE)={d3}
+F(ROOF)={d9}
+F(WINDOW)={d10,d11}
+F(DOOR)={d12}
+F(CARROT)={d13}
+F(WOMAN)={d14}
+F(BOY)={d15}
+F(FENCE)={d16,d17}
+F(GRASS)={d18}F(NEAR)={(d1,d2),(d3,d4)}
+F(HAT)={d19}
+F(JACKET)={d20}
+F(PANTS)={d21}
+F(SHIRT)={d22}
+F(SOIL)={d23}
+F(IS-WEARING)={(d14,{d20,d22}),(d15,{d19,d21,d22})}
