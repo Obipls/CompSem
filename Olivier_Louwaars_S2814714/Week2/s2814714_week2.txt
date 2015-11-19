@@ -1,0 +1,44 @@
+Hard concepts in text:
+1:	First, let M = (D, F ) be a model, let g be an assignment in M , and
+	let τ be a term. Then the interpretation of τ with respect to M and
+	g is F (τ ) if τ is a constant, and g(τ ) if τ is a variable. We denote the
+	interpretation of τ by I F g (τ ).
+Too many variables at once, oversight lost
+
+2:	¬∃x(inanimate(x)∧talk(x)).
+	Once again, instead of making use of a special sort of variable that is
+	restricted in its interpretation, we have made use of an extra unary
+	relation symbol (here, inanimate) which we insist be interpreted by
+	the individuals in the relevant sort.
+Context is missing, who are the individuals, and of what sort are they?
+
+
+1.1.5:
+1: ∃xhappy(x) → happy(Vincent)
+2: ∃xhappy(x) ∧ ¬happy(Vincent) → happy(Jules) ∨ happy(Butch)
+3: ∀xhappy(x) v (fighting(Butch) ∧ (fighting(Pumpkin)) v weirdExperience(Vincent)
+4: ∃x(damaged(x)) ∧ ∃y(bulletholes(y)) ∧ damaged(Car) ∧ bulletholes(Wall)
+5: ∀x,y(tasty(x) ∧ good(y)) ∧ ∃z(excellent(z)) ∧ tasty(Hamburgers) ∧ good(Fries) ∧ excellent(Milkshakes)
+6: ∀xpeopleInBasement(x) ∧ xwearing(y) ∧  wearing(leatherJacket v dogCollar)
+
+1.1.7:
+1: Free: y
+2: Free: x,y
+3: Free: x,y,y
+4: Free: x, Bound: y,y
+5: Bound: w,y,y
+
+1.1.10:
+1: True
+2: True
+3: True
+
+1.1.11:
+M = (D,F)
+D = {d1,d2,d3,d4}
+F (Vincent) = d1
+F (Butch) = d4
+F (Aggressive) = {d1}
+f (Motorbike) = {d3}
+F (Gun) = {d2}
+F (Has) = {(d1,d2),(d4,d3)}.
