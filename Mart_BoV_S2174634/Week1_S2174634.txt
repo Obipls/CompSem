@@ -3,6 +3,9 @@ Also the two difficult questions are added as images (Difficult_question1.png an
 The first question was difficult because the senses look alike a lot and are maybe a bit vague. I chose the second option, a territory occupied by a nation.
 The same goes for the second difficult question. I could not find the difference between two senses. A compromise could be a middle way between two extremes but also an accommodation in which both sides make concessions. I chose the last option, because there was no mention of extremes in the sentence.
 
+With the modeling I came across multi-word senses in WordNet. In those cases I chose to pick another word in the same synset which consisted of one word. An example is for the german shepherd, for which I chose n_alsatian_2 instead of n_german_shepherd_1.
+Another problem was knowing how detailed I had to go. Not every image had to be done very detailed in my opinion because there already was happening quite a lot on some images.
+
 Assignment 1.1.1
 
 { (Point,2),
