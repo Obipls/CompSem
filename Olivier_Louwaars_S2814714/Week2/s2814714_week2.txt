@@ -1,4 +1,4 @@
-Hard concepts in text:
+﻿Hard concepts in text:
 1:	First, let M = (D, F ) be a model, let g be an assignment in M , and
 	let τ be a term. Then the interpretation of τ with respect to M and
 	g is F (τ ) if τ is a constant, and g(τ ) if τ is a variable. We denote the
@@ -19,7 +19,7 @@ Context is missing, who are the individuals, and of what sort are they?
 3: ∀xhappy(x) v (fighting(Butch) ∧ (fighting(Pumpkin)) v weirdExperience(Vincent)
 4: ∃x(damaged(x)) ∧ ∃y(bulletholes(y)) ∧ damaged(Car) ∧ bulletholes(Wall)
 5: ∀x,y(tasty(x) ∧ good(y)) ∧ ∃z(excellent(z)) ∧ tasty(Hamburgers) ∧ good(Fries) ∧ excellent(Milkshakes)
-6: ∀xpeopleInBasement(x) ∧ xwearing(y) ∧  wearing(leatherJacket v dogCollar)
+6: ∀xpeopleInBasement(x) → xwearing(y) ∧  wearing(leatherJacket v dogCollar)
 
 1.1.7:
 1: Free: y
@@ -42,3 +42,17 @@ F (Aggressive) = {d1}
 f (Motorbike) = {d3}
 F (Gun) = {d2}
 F (Has) = {(d1,d2),(d4,d3)}.
+
+
+
+4: A modelchecking tool should at least work by the following rules:
+- Is the model defined with the correct domain?
+- Are all open brackets (curly, square, parentheses) also closed?
+- Does every line end with a comma, and the last one with a period?
+- Does every relation start on a new line?
+- Does the arity of every relation correspond to the given value?
+- Is there a WordNet entity for every synset?
+- Is every individual in a relation defined in the domain?
+- Does every individual with a adjective synset also have a noun synset?
+- Are the synsets formatted correctly with underscores?
+
