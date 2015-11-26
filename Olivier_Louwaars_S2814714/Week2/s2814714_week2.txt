@@ -35,10 +35,11 @@ Context is missing, who are the individuals, and of what sort are they?
 
 1.1.11:
 M = (D,F)
-D = {d1,d2,d3,d4}
+D = {d1,d2,d3,d4,d5}
 F (Vincent) = d1
 F (Butch) = d4
-F (Aggressive) = {d1}
+F (Jules) = d5
+F (Aggressive) = {d1,d5}
 f (Motorbike) = {d3}
 F (Gun) = {d2}
 F (Has) = {(d1,d2),(d4,d3)}.

@@ -1,0 +1,7 @@
+Hard concepts:
+1) to build representations, we need to work with incomplete first-order formulas, and we need a way of manipulating the missing information.
+Was the incomplete first-order logic not the reason to try another method?
+
+2) That is, the determiner contributes the skeleton of a first-order formula whose first slot needs to be instantiated with a variable, whose
+second slot needs to be filled with the semantic representation of a noun, and whose third slot needs to be filled by the semantic representation of a VP.
+What is meant by the skeleton? and why has it three slots?
