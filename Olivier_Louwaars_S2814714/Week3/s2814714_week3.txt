@@ -1,7 +1,32 @@
-Hard concepts:
+1: Hard concepts:
 1) to build representations, we need to work with incomplete first-order formulas, and we need a way of manipulating the missing information.
 Was the incomplete first-order logic not the reason to try another method?
 
 2) That is, the determiner contributes the skeleton of a first-order formula whose first slot needs to be instantiated with a variable, whose
 second slot needs to be filled with the semantic representation of a noun, and whose third slot needs to be filled by the semantic representation of a VP.
 What is meant by the skeleton? and why has it three slots?
+
+3: CCG Analysis 
+Correct:
+1)
+2)
+3)
+4)
+5)
+False:
+1)
+2)
+3)
+4)
+5)
+
+4: Mistakes
+animals-65588_640.mod: d4-10 are not defined in the domain
+apple-19309_640.mod: d6 and d7 are not in domain
+baby-114627_640.mod: d4 is not in the domain
+bald-eagle-184229_640.mod: used twice, could have been added to earlier function as [n2,n4]
+boat-405759_640.mod: used twice, could have been added to earlier function as [d1,d4]
+cat-1709_640.mod: used twice, could have been added to earlier function as [d1,d3,d4]
+dachshund-361560_640.mod: f is missing, d6 is missing in domain
+little-boy-251365_640.mod: d9-d12 are missing in the domain
+man-220386_640.mod: s2 should be d2
