@@ -1,0 +1,32 @@
+s --> np(A),vp(decl,A). %
+s --> [there], cop, np. % there are cats
+
+pp --> prep,np.
+vp(M,A) --> iv(M). %sleeps
+vp(M,A) --> iv(M,A),pp. %sleeps on
+vp(M,A) --> tv(M),np. %drinks milk
+vp(M,A) --> tv(M),np,pp. %drinks milk in
+vp(decl,A) --> av,vp(prep). % is sleeping
+vp(M,A) --> dtv(M),np,np. % sends him a card
+vp(M,A) --> dtv(M),np,np,pp. % sends him a card on
+vp(M,A) --> cop,tv(M),[by],np. % the cat is chased by a dog 
+vp(M,A) --> cop,tv(M),[by],np,pp. % the cat is chased by a dog in
+vp --> cop,a. % is red
+
+
+np --> [the,bicycle].
+np --> [a,man].
+iv(prep,_) --> [swimming].
+iv(decl,sg) --> [swims].
+dtv(prep)--> [sending].
+av --> [is].
+a --> [red].
+cop --> [is].
+cop --> [being].
+tv(pstp) --> [held].
+prep --> [with].
+
+% www.leanprolognow.org , chapter 7,8
+
+
+
