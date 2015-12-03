@@ -1,3 +1,3 @@
 A dog is standing in a lake.
-A cat has a ball in its mouth.
-The ball is blue.
+A dog has a cube in its mouth.
+The ball in the dog's mouth is blue.

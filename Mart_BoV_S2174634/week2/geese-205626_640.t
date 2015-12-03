@@ -1,3 +1,3 @@
-The mute swan is white.
-The honkers are grey.
-The animals is swimming in a body of water.
+The mute swan has white feathers.
+The honkers have a black head.
+The animals are swimming in a body of water.
