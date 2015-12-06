@@ -6,19 +6,12 @@ Was the incomplete first-order logic not the reason to try another method?
 second slot needs to be filled with the semantic representation of a noun, and whose third slot needs to be filled by the semantic representation of a VP.
 What is meant by the skeleton? and why has it three slots?
 
+
+2: see Semantics_Verbs.pdf
+
 3: CCG Analysis 
-Correct:
-1)
-2)
-3)
-4)
-5)
-False:
-1)
-2)
-3)
-4)
-5)
+see ccg.xlsx
+Use the worksheets/tabs at bottom of screen to switch between true and false sentences
 
 4: Mistakes
 animals-65588_640.mod: d4-10 are not defined in the domain
