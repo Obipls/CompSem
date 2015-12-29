@@ -51,3 +51,82 @@
 							8. F(p∨q) 7,F∧ ✓	9. F(p∨r) 7,F∧ ✓
 							10. F(p) 8,F∨ ✓		11. F(p) 9,F∨ ✓
 							12. F(q) 8,F∨ ✓		13. F(r) 9,F∨ ✓
+
+
+
+assignment 4.4.1
+
+1:
+¬¬p→p
+p→p
+¬p∨p NNF
+
+2:
+((p→q)→p)→p
+¬(p→q)→p)∨p
+(p→q)∧¬p∨p
+¬p∨q∧¬p∨p  NNF
+
+3:
+(¬p→¬q)→(q→p)
+¬(¬p→¬q)∨(q→p)
+¬p∧¬¬q∨(q→p)
+¬p∧q∨(q→p)
+¬p∧q∨¬q∨p NNF
+
+
+4:
+p→(p∧(q∨p))
+¬p∨(p∧(q∨p))
+¬p∨p∧¬p∨(q∨p) CNF
+
+5:
+(p∨(q∧r))→((p∨q)∧(p∨r))
+¬(p∨(q∧r))∨((p∨q)∧(p∨r))
+¬p∧¬(q∧r)∨((p∨q)∧(p∨r))
+¬p∧¬q∨¬r∨((p∨q)∧(p∨r)) NNF
+
+
+assignment 4.4.5 (answers from 4.4.1 as input)
+1:
+¬p∨p
+[[¬p],[p]]
+[[],[]]
+2 empty clauses
+
+2:
+¬p∨q∧¬p∨p
+[[¬p,q],[¬p,p]]
+[[q],[¬p]]
+no empty clause
+
+3:
+¬p∧q∨¬q∨p
+[[¬p],[q,¬q,p]]
+[[],[q,¬q]]
+1 empty clause
+
+4:
+¬p∨p∧¬p∨q∨p
+[[¬p,p],[¬p,q,p]]
+[[],[q]]
+1 empty clause
+
+5:
+¬p∧¬q∨¬r∨((p∨q)∧(p∨r))
+[[¬p],[¬q,¬r,p,q],[p,r]]
+[[],[¬q,q],[p]]
+1 empty clause
+
+
+First order logic axioms regarding spatial relations:
+- support and touch are conjunct.
+- touch and near are disjunct.
+- therefore, support and near are disjunct.
+- touch is symmetric.
+- near is symmetric.
+- if there is part_of, there is no support or touch.
+- if there is support, near is for both.
+- if there is part-of, near is for both.
+
+
