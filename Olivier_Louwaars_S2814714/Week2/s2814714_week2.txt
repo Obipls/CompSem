@@ -1,4 +1,4 @@
-﻿Hard concepts in text:
+Hard concepts in text:
 1:	First, let M = (D, F ) be a model, let g be an assignment in M , and
 	let τ be a term. Then the interpretation of τ with respect to M and
 	g is F (τ ) if τ is a constant, and g(τ ) if τ is a variable. We denote the

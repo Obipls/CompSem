@@ -1,26 +1,26 @@
-MIA: 	 λu.(u@MIA)
+﻿MIA: 	 λu.(u@MIA)
 VINCENT: λv.(v@VINCENT)
-LOVES:	 λw.λz.(w@λx.love(z,x))
+LOVE:	 λw.λz.(w@λx.LOVE(z,x))
+
+Functional application  LOVE,MIA
+λw.λz.(w@λx.LOVE(z,x)@λu.(u@MIA))
 
 β-conversion λw
-λz.(λx.love(z,x))
-
-Functional application MIA
-λz.(λx.love(z,x)@λu.(u@MIA))
+λz.(λu.(u@MIA)@λx.LOVE(z,x))
 
 β-conversion λu
-λz.(λx.love(z,x)@MIA)
+λz.(λx.LOVE(z,x)@MIA)
 
 β-conversion λx
-λz.(love(z,MIA))
+λz.(LOVE(z,MIA))
 
-Functional application VINCENT
-λz.(love(z,MIA)@λv.(v@VINCENT))
+Functional application LOVE MIA, VINCENT
+λz.(LOVE(z,MIA)@λv.(v@VINCENT))
 
 β-conversion λv
-λz.(love(z,MIA)@VINCENT))
+λz.(LOVE(z,MIA)@VINCENT)
 
 β-conversion λz
-love(VINCENT,MIA)
+LOVE(VINCENT,MIA)
 
 

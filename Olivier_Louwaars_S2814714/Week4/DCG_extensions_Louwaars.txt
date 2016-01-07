@@ -1,0 +1,197 @@
+noun phrases:
+a man with an accordion
+
+ACCORDION: 	 λu.(u@ACCORDION)
+MAN: λv.(v@MAN)
+S_SUPPORT:	 λw.λz.(w@λx.S_SUPPORT(z,x))
+
+Functional application  S_SUPPORT,ACCORDION
+λw.λz.(w@λx.S_SUPPORT(z,x)@λu.(u@ACCORDION))
+
+β-conversion λw
+λz.(λu.(u@ACCORDION)@λx.S_SUPPORT(z,x))
+
+β-conversion λu
+λz.(λx.S_SUPPORT(z,x)@ACCORDION)
+
+β-conversion λx
+λz.(S_SUPPORT(z,ACCORDION))
+
+Functional application S_SUPPORT ACCORDION, MAN
+λz.(S_SUPPORT(z,ACCORDION)@λv.(v@MAN))
+
+β-conversion λv
+λz.(S_SUPPORT(z,ACCORDION)@MAN)
+
+β-conversion λz
+S_SUPPORT(MAN,ACCORDION)
+
+
+a owl in a tree
+
+OWL: 	 λu.(u@OWL)
+TREE: λv.(v@TREE)
+S_NEAR:	 λw.λz.(w@λx.S_NEAR(z,x))
+
+Functional application  S_NEAR,OWL
+λw.λz.(w@λx.S_NEAR(z,x)@λu.(u@OWL))
+
+β-conversion λw
+λz.(λu.(u@OWL)@λx.S_NEAR(z,x))
+
+β-conversion λu
+λz.(λx.S_NEAR(z,x)@OWL)
+
+β-conversion λx
+λz.(S_NEAR(z,OWL))
+
+Functional application NEAR OWL, TREE
+λz.(S_NEAR(z,OWL)@λv.(v@TREE))
+
+β-conversion λv
+λz.(S_NEAR(z,OWL)@TREE)
+
+β-conversion λz
+S_NEAR(TREE,OWL)
+
+
+
+verb phrases:
+a man walks on a beach
+
+BEACH: 	 λu.(u@BEACH)
+MAN: WALKING(λv.(v@MAN))
+S_TOUCH:	 λw.λz.(w@λx.S_TOUCH(z,x))
+
+Functional application  TOUCH,BEACH
+λw.λz.(w@λx.S_TOUCH(z,x)@λu.(u@BEACH))
+
+β-conversion λw
+λz.(λu.(u@BEACH)@λx.S_TOUCH(z,x))
+
+β-conversion λu
+λz.(λx.S_TOUCH(z,x)@BEACH)
+
+β-conversion λx
+λz.(S_TOUCH(z,BEACH))
+
+Functional application TOUCH BEACH, MAN
+λz.(S_TOUCH(z,BEACH)@WALKING(λv.(v@MAN)))
+
+β-conversion λv
+λz.(S_TOUCH(z,BEACH)@WALKING(MAN))
+
+β-conversion λz
+S_TOUCH(WALKING(MAN),BEACH)
+
+
+
+
+a boy plays with a keyboard
+
+KEYBOARD: 	 λu.(u@KEYBOARD)
+BOY: PLAYING(λv.(v@BOY))
+S_TOUCH:	 λw.λz.(w@λx.S_TOUCH(z,x))
+
+Functional application  TOUCH,KEYBOARD
+λw.λz.(w@λx.S_TOUCH(z,x)@λu.(u@KEYBOARD))
+
+β-conversion λw
+λz.(λu.(u@KEYBOARD)@λx.S_TOUCH(z,x))
+
+β-conversion λu
+λz.(λx.S_TOUCH(z,x)@KEYBOARD)
+
+β-conversion λx
+λz.(S_TOUCH(z,KEYBOARD))
+
+Functional application TOUCH KEYBOARD, BOY
+λz.(S_TOUCH(z,KEYBOARD)@PLAYING(λv.(v@BOY)))
+
+β-conversion λv
+λz.(S_TOUCH(z,KEYBOARD)@PLAYING(BOY))
+
+β-conversion λz
+S_TOUCH(PLAYING(BOY),KEYBOARD)
+
+
+
+modifier constructions:
+a boy with a girl near a lake
+
+GIRL: λt.(t@GIRL)
+BOY:  λu.(u@BOY)
+LAKE: λv.(v@LAKE)
+S_TOUCH: λw.λz.(w@λx.S_TOUCH(z,x))
+S_NEAR: λw.λz.(w@λx.S_NEAR(z,x))
+
+
+Functional application  TOUCH,GIRL
+λw.λz.(w@λx.S_TOUCH(z,x)@λu.(u@GIRL))
+
+β-conversion λw
+λz.(λu.(u@GIRL)@λx.S_TOUCH(z,x))
+
+β-conversion λu
+λz.(λx.S_TOUCH(z,x)@GIRL)
+
+β-conversion λx
+λz.(S_TOUCH(z,GIRL))
+
+Functional application TOUCH GIRL, BOY
+λz.(S_TOUCH(z,GIRL)@λv.(v@BOY))
+
+β-conversion λv
+λz.(S_TOUCH(z,GIRL)@BOY)
+
+β-conversion λz
+S_TOUCH(BOY,GIRL)
+
+Functional application  NEAR,LAKE
+λw.λz.(w@λx.S_NEAR(z,x)@λu.(u@LAKE))
+
+β-conversion λw
+λz.(λu.(u@LAKE)@λx.S_NEAR(z,x))
+
+β-conversion λu
+λz.(λx.S_NEAR(z,x)@LAKE)
+
+β-conversion λx
+λz.(S_NEAR(z,LAKE))
+
+Functional application NEAR LAKE, S_TOUCH(BOY,GIRL)
+λz.(S_NEAR(z,LAKE)@λv.(v@S_TOUCH(BOY,GIRL)))
+
+β-conversion λv
+λz.(S_NEAR(z,LAKE)@S_TOUCH(BOY,GIRL))
+
+β-conversion λz
+S_NEAR(S_TOUCH(BOY,GIRL),LAKE)
+
+
+a child walking on the beach
+
+BEACH: 	 λu.(u@BEACH)
+CHILD: WALKING(λv.(v@CHILD))
+S_TOUCH:	 λw.λz.(w@λx.S_TOUCH(z,x))
+
+Functional application  TOUCH,BEACH
+λw.λz.(w@λx.S_TOUCH(z,x)@λu.(u@BEACH))
+
+β-conversion λw
+λz.(λu.(u@BEACH)@λx.S_TOUCH(z,x))
+
+β-conversion λu
+λz.(λx.S_TOUCH(z,x)@BEACH)
+
+β-conversion λx
+λz.(S_TOUCH(z,BEACH))
+
+Functional application TOUCH BEACH, CHILD
+λz.(S_TOUCH(z,BEACH)@WALKING(λv.(v@CHILD)))
+
+β-conversion λv
+λz.(S_TOUCH(z,BEACH)@WALKING(CHILD))
+
+β-conversion λz
+S_TOUCH(WALKING(CHILD),BEACH)
