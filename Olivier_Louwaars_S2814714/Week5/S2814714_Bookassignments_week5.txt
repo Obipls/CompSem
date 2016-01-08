@@ -159,13 +159,35 @@ assignment 4.4.5 (answers from 4.4.1 as input)
 
 
 First order logic axioms regarding spatial relations:
-- support and touch are conjunct.
-- touch and near are disjunct.
-- therefore, support and near are disjunct.
+
+- part_of is transitive
+∀x∀y∀z(part_of(x,y)→(part_of(y,z)→part_of(x,z)))
+
+- if there is support, there is touch.
+ ∀x∀y(support(x,y)→touch(x,y))
+
+- if there is touch, there is no near.
+∀x∀y(touch(x,y)→ ¬near(x,y))
+
+- therefore, if there is support, there is no near.
+∀x∀y(∀support(x,y)→ ¬near(x,y))
+
 - touch is symmetric.
+∀x∀y(touch(x,y)→ touch(y,x))
+
 - near is symmetric.
-- if there is part_of, there is no support or touch.
+∀x∀y(near(x,y)→ near(y,x))
+
+- if there is part_of, there is no support and no touch.
+∀x∀y(part_of(x,y)→ (¬support(x,y)∧¬touch(x,y)))
+
 - if there is support, near is for both.
+∀x∀y∀z(support(x,y)→  (near(x,z)∧near(y,z)))
+
 - if there is part-of, near is for both.
+∀x∀y∀z(part_of(x,y)→  (near(x,z)∧near(y,z)))
+
+something can't be part of itself
+∀x¬part_of(x,x)
 
 
